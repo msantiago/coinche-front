@@ -18,7 +18,7 @@ console.log("hostname", window.location.hostname)
 const client = new ApolloClient({
 	cache: new InMemoryCache(),
 	link: new HttpLink({
-	  uri: (window.location.hostname === 'localhost' ? 'http://localhost:3030' : 'https://ptitecoinche.herokuapp.com') + '/graphql/',
+	  uri: (window.location.hostname === 'localhost' ? 'http://localhost:3030' : 'https://coinche-back.onrender.com') + '/graphql/',
 	}),
   });
 
