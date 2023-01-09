@@ -97,13 +97,10 @@ export default observer(() => {
 
 	const createGame = React.useCallback(async () => {
 		try {
-			alert('createGameMutation : ' + globalStore.gameId + ", " + globalStore.token)
 			const res = await createGameMutation({ variables: {
 				// gameId: globalStore.gameId,
 				token: globalStore.token,
 			} });
-			alert('created')
-			alert("Res : " + res.data);
 			runInAction(() => {
 				globalStore.gameId = res.data.createGame;
 				globalStore.token = null;

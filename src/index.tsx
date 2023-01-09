@@ -10,6 +10,7 @@ import Buttons from "./components/Buttons";
 import Players from "./components/Players";
 import Actions from "./components/Actions";
 import Game from "./components/Game";
+import './index.css'
 
 moment.tz.setDefault("Europe/Paris");
 moment.locale('fr');
